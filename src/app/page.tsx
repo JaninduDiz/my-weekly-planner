@@ -238,8 +238,8 @@ export default function Home() {
             <span className="text-[11px] leading-tight mt-0.5">Week</span>
           </button>
         </div>
-        {/* Safe area inset spacer */}
-        <div style={{ height: 'env(safe-area-inset-bottom)' }} />
+        {/* Safe area inset spacer - add extra to lift icons up slightly */}
+        <div style={{ height: 'calc(env(safe-area-inset-bottom) + 12px)' }} />
       </nav>
     </div>
   );

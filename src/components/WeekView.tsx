@@ -70,7 +70,7 @@ export default function WeekView({ currentWeek, selectedDate, onDateSelect, onWe
               isSameDay(day, selectedDate)
                 ? 'bg-blue-100 text-blue-700 ring-2 ring-blue-500'
                 : isToday(day)
-                ? 'bg-blue-50 text-blue-700 ring-1 ring-blue-400'
+                ? 'text-red-600'
                 : 'text-gray-600 hover:bg-gray-50'
             }`}
           >
@@ -78,7 +78,7 @@ export default function WeekView({ currentWeek, selectedDate, onDateSelect, onWe
               {format(day, 'EEE')}
             </div>
             <div className={`text-lg font-semibold ${
-              isSameDay(day, selectedDate) ? 'text-blue-700' : 'text-gray-900'
+              isSameDay(day, selectedDate) ? 'text-blue-700' : isToday(day) ? 'text-red-600' : 'text-gray-900'
             }`}>
               {format(day, 'd')}
             </div>
