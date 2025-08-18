@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+export const runtime = 'nodejs';
 import dbConnect from '@/lib/mongodb';
 import Task from '@/models/Task';
 
