@@ -127,7 +127,7 @@ export default function Home() {
       <header className="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-10">
         <div className="px-4 py-3">
           <h1 className="text-xl font-semibold text-gray-900 text-center">
-            Weekly Goals
+            Weekly Tasks
           </h1>
         </div>
       </header>

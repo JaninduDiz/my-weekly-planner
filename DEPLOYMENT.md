@@ -1,4 +1,4 @@
-# Deployment Guide for Weekly Goals
+# Deployment Guide for Weekly Planner
 
 ## 🚀 Deploy to Vercel (Recommended)
 
