@@ -5,13 +5,13 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Weekly Goals",
-  description: "Track your weekly goals and daily tasks",
+  title: "My Planner",
+  description: "Track your Weekly tasks and daily tasks",
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "Weekly Goals",
+    title: "My Planner",
   },
   formatDetection: {
     telephone: false,
@@ -36,7 +36,7 @@ export default function RootLayout({
       <head>
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="apple-mobile-web-app-title" content="Weekly Goals" />
+        <meta name="apple-mobile-web-app-title" content="My Planner" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="192x192" href="/icon-192x192.png" />
         <link rel="icon" type="image/png" sizes="512x512" href="/icon-512x512.png" />

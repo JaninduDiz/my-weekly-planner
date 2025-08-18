@@ -1,6 +1,6 @@
-# Weekly Goals - PWA Task Tracker
+# Weekly Planner - PWA Task Tracker
 
-A Progressive Web App for tracking weekly goals and daily tasks with a native iOS-like design. Perfect for organizing your week with daily task breakdowns for learning, coding, chores, errands, and more.
+A Progressive Web App for tracking Weekly Tasks and daily tasks with a native iOS-like design. Perfect for organizing your week with daily task breakdowns for learning, coding, chores, errands, and more.
 
 ## Features
 

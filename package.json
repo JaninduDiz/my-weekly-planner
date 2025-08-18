@@ -2,7 +2,7 @@
   "name": "weekly-goals",
   "version": "0.1.0",
   "private": true,
-  "description": "A PWA for tracking weekly goals and daily tasks with native iOS-like design",
+  "description": "A PWA for tracking Weekly Tasks and daily tasks with native iOS-like design",
   "keywords": ["pwa", "goals", "tasks", "productivity", "nextjs", "react"],
   "author": "Your Name",
   "license": "MIT",

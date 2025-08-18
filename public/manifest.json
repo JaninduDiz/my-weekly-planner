@@ -1,11 +1,11 @@
 {
-  "name": "Weekly Goals",
+  "name": "My Planner",
   "short_name": "Goals",
-  "description": "Track your weekly goals and daily tasks",
+  "description": "Track your Weekly Tasks and daily tasks",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#007AFF",
+  "theme_color": "#00ddff",
   "orientation": "portrait",
   "icons": [
     {
