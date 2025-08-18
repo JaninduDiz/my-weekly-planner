@@ -1,36 +1,134 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Weekly Goals - PWA Task Tracker
+
+A Progressive Web App for tracking weekly goals and daily tasks with a native iOS-like design. Perfect for organizing your week with daily task breakdowns for learning, coding, chores, errands, and more.
+
+## Features
+
+- 📱 **PWA Ready** - Add to iPhone home screen for native app experience
+- 📅 **Weekly View** - Navigate between weeks and select specific dates
+- ✅ **Task Management** - Create, complete, and organize daily tasks
+- 🔴 **Priority Marking** - Mark important tasks with red flags
+- 📋 **Categories** - Organize tasks by type (learn, code, chores, errands)
+- 🔄 **Task Migration** - Move incomplete tasks to the next day
+- 📊 **Progress Tracking** - Visual feedback for completed tasks
+- 🎨 **iOS Design** - Native iOS-like UI components and interactions
+
+## Tech Stack
+
+- **Frontend**: Next.js 14, React, TypeScript, Tailwind CSS
+- **Backend**: Next.js API Routes
+- **Database**: MongoDB with Mongoose
+- **PWA**: next-pwa for offline support
+- **Styling**: Tailwind CSS with iOS-inspired design
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+ 
+- MongoDB database (local or Atlas)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone <your-repo-url>
+   cd weekly-goals
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Set up environment variables:
+   ```bash
+   cp .env.local.example .env.local
+   ```
+   
+   Edit `.env.local` and add your MongoDB connection string:
+   ```
+   MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/weekly-goals
+   ```
+
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+5. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+### Building for Production
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deployment
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Vercel (Recommended)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Add environment variables in Vercel dashboard
+4. Deploy automatically on push
 
-## Learn More
+### Environment Variables for Production
 
-To learn more about Next.js, take a look at the following resources:
+- `MONGODB_URI`: Your MongoDB connection string
+- `NODE_ENV`: Set to `production`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## PWA Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Home Screen Installation**: Add to iPhone home screen for native app experience
+- **Offline Support**: Basic offline functionality with service worker
+- **App-like Navigation**: Smooth transitions and native feel
+- **Responsive Design**: Optimized for mobile devices
 
-## Deploy on Vercel
+## Usage
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Navigate Weeks**: Use arrow buttons to move between weeks
+2. **Select Date**: Tap on any day to view/edit tasks
+3. **Add Tasks**: Click "+ Add Task" to create new tasks
+4. **Mark Complete**: Tap the circle to mark tasks as done
+5. **Move Tasks**: Use the arrow button to move incomplete tasks to the next day
+6. **Mark Important**: Toggle the important flag for priority tasks
+7. **Delete Tasks**: Remove completed or unnecessary tasks
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Project Structure
+
+```
+src/
+├── app/                 # Next.js app directory
+│   ├── api/            # API routes
+│   │   └── tasks/      # Task CRUD operations
+│   ├── globals.css     # Global styles
+│   ├── layout.tsx      # Root layout with PWA meta tags
+│   └── page.tsx        # Main page component
+├── components/         # React components
+│   ├── AddTaskModal.tsx
+│   ├── TaskList.tsx
+│   └── WeekView.tsx
+├── lib/               # Utility functions
+│   └── mongodb.ts     # Database connection
+└── models/            # Mongoose models
+    └── Task.ts        # Task schema
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## Support
+
+For support, please open an issue on GitHub or contact the maintainers.
