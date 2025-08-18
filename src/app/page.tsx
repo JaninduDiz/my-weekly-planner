@@ -122,7 +122,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 pb-24">
+    <div className="min-h-screen bg-gray-50 pb-28">
       {/* Header */}
       <header className="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-10">
         <div className="px-4 py-3">
@@ -238,8 +238,8 @@ export default function Home() {
             <span className="text-[11px] leading-tight mt-0.5">Week</span>
           </button>
         </div>
-        {/* Safe area inset spacer - add extra to lift icons up slightly */}
-        <div style={{ height: 'calc(env(safe-area-inset-bottom) + 12px)' }} />
+        {/* Safe area inset spacer - lift icons further above the home indicator */}
+        <div style={{ height: 'calc(env(safe-area-inset-bottom) + 28px)' }} />
       </nav>
     </div>
   );
